@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Movie.create(title: "Detective Pikachu", runtime: 90)
+Movie.create(title: "Avengers Endgame", runtime: 180)
+Movie.create(title: "Captain Marvel", runtime: 120)
