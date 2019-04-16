@@ -12,6 +12,9 @@ Rails.application.routes.draw do
     post "/theaters" => "theaters#create"
     delete "/theaters/:id" => "theaters#destroy"
 
-
+    get "/showtimes" => "showtimes#index"
+    post "/showtimes" => "showtimes#create"
+    post "/showtimes/:id" => "showtimes#update"
+    delete "/showtimes/:id" => "showtimes#delete"
   end
 end

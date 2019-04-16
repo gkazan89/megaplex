@@ -1,0 +1,1 @@
+json.partial! "showtime.json.jbuilder", showtime: @showtime
