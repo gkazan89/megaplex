@@ -16,5 +16,10 @@ Rails.application.routes.draw do
     post "/showtimes" => "showtimes#create"
     post "/showtimes/:id" => "showtimes#update"
     delete "/showtimes/:id" => "showtimes#delete"
+
+    get "/tickets" => "tickets#index"
+    get "/tickets/:id" => "tickets#show"
+    post "/tickets" => "tickets#create"
+
   end
 end
