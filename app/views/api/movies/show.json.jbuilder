@@ -1,2 +1,1 @@
-  json.title @movie.title
-  json.runtime @movie.runtime
+json.partial! "movie.json.jbuilder", movie: @movie

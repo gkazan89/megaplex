@@ -1,0 +1,1 @@
+json.partial! "theater.json.jbuilder", theater: @theater
