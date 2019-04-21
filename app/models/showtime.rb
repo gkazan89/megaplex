@@ -7,9 +7,9 @@ class Showtime < ApplicationRecord
     capacity = self.theater.capacity
     tix = self.tickets.length
     if tix >= capacity
-      status = {sold_out?: true}
+      status = {is_sold_out: true}
     else
-      status = {sold_out?: false}
+      status = {is_sold_out: false}
     end
   end
 end
