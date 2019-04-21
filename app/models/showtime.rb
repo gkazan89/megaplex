@@ -3,13 +3,13 @@ class Showtime < ApplicationRecord
   belongs_to :movie
   has_many :tickets
 
-  def sold_out
+  def status
     capacity = self.theater.capacity
     tix = self.tickets.length
     if tix >= capacity
-      sold_out = {status: true}
+      status = {sold_out?: true}
     else
-      sold_out = {status: false}
+      status = {sold_out?: false}
     end
   end
 end
