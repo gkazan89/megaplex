@@ -17,8 +17,11 @@ class Api::TicketsController < ApplicationController
       expiration_date: params[:expiration_date],
       showtime_id: params[:showtime_id]
       )
-    @ticket.save
-    render "show.json.jbuilder"
+    if @ticket.save
+      render "show.json.jbuilder"
+    else
+      render json: {errors: @ticket.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
 end
