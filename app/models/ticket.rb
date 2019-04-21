@@ -5,7 +5,7 @@ class Ticket < ApplicationRecord
   validates :email, presence: true
 
   # credit card must be 16 digits
-  validates :credit_card, presence: true
+  validates :credit_card, presence: true, numericality: true 
   validates :credit_card, length: { is: 16}
 
   # expiration date can't be past
