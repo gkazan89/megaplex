@@ -14,4 +14,4 @@
 # Theater.create(capacity: 6)
 # Theater.create(capacity: 8)
 
-Ticket.create(name: "tom cruise", email: "tom@email.com", credit_card: 123456789, expiration_date: (Date.new(2022, 4, 10)), showtime_id: 1)
+# Ticket.create(name: "tom cruise", email: "tom@email.com", credit_card: 123456789, expiration_date: (Date.new(2022, 4, 10)), showtime_id: 1)
